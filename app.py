@@ -11,7 +11,7 @@ def index():
     if request.method == "POST":
         try:
             number = float(request.form["number"])
-            result = number + 3
+            result = number + 4
             print(f"Результат: {result}")
         except ValueError:
             error = "Введите число"
