@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Возвести число в степень</h1>
+    {% if error %}
+        <p style="color: red;">{{ error }}</p>
+    {% endif %}
+    {% if result %}
+        <p>Степнь числа: {{ result }}</p>
+    {% endif %}
+    <form method="POST">
+        <label for="number">Введите число:</label>
+        <input type="text" id="number" name="number"><br><br>
+        <input type="submit" value="Вычислить">
+    </form>
+</body>
+</html>
